@@ -29,15 +29,15 @@ function Header() {
           )}
         </button>
       </div>
-      <div className="hidden md:flex gap-14 w-full justify-center">
+      <div className="hidden md:flex gap-14 w-full items-center justify-center">
         {menu.map((item, index) => (
           <NavLink
             key={index}
             to={item.path}
             className={({ isActive }) =>
               isActive
-                ? "text-white p-2 rounded-md bg-blue-500"
-                : "text-black font-medium hover:text-white hover:bg-blue-500 p-2 rounded-md transition-all duration-200 ease-in-out"
+                ? "text-red-500 py-8 border-b-4 border-red-500 flex items-center justify-center transition-all duration-200 ease-in-out"
+                : "text-black py-8  hover:text-red-500 hover:border-b-4 border-red-500 p-2 transition-all duration-200 ease-in-out"
             }
           >
             {item.title}
@@ -45,7 +45,7 @@ function Header() {
         ))}
       </div>
       {isOpen && (
-        <div className="fixed top-[90px] right-0 bg-slate-800 h-full justify-start w-1/2 flex flex-col gap-14 p-7 divide-y transition-all duration-200 ease-in-out ">
+        <div className="fixed top-0 right-0 bg-slate-800 h-screen justify-start w-1/2 flex flex-col gap-14 p-7 divide-y transition-all duration-200 ease-in-out ">
           {menu.map((item, index) => (
             <NavLink
               onClick={toggleMenu} //close menu if clicked and goes to the required page
@@ -53,7 +53,7 @@ function Header() {
               to={item.path}
               className={({ isActive }) =>
                 isActive
-                  ? "text-white p-2 font-medium"
+                  ? "text-white p-2 font-medium "
                   : "text-gray-500 font-medium p-2 transition-all duration-200 ease-in-out"
               }
             >
