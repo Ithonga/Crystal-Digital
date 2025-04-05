@@ -7,8 +7,8 @@ function Home() {
       // style={{ backgroundImage: "url('/bg.jpg')" }}
       className="w-full h-full items-center flex flex-col "
     >
-      <div className="flex md:flex-row flex-col h-full px-20 shadow-md justify-between items-center">
-        <div className="flex flex-col gap-8 justify-center h-full">
+      <div className="flex h-full px-3 md:px-20 py-10 shadow-md justify-start items-start">
+        <div className="flex flex-col gap-8 md:items-start items-center justify-center h-full">
           <p className="text-lg font-light text-[#00afef] ">
             Elevate your brand with our creative excellence.
           </p>
@@ -20,7 +20,7 @@ function Home() {
             creativity knows no bounds. From sleek logos that speak volumes to
             immersive web experiences.
           </p>
-          <div className="flex gap-1">
+          <div className="flex md:flex-row flex-col gap-1">
             <a
               href="/services"
               className="bg-white
@@ -38,7 +38,7 @@ function Home() {
           {/* <div className="w-full h-[200px] rounded-b-3xl bg-[#00afef]"></div> */}
 
         </div>
-        <img src="/design.png" alt="Company logo" className="w-1/2" />
+        <img src="/design.png" alt="Company logo" className="hidden md:block w-1/2" />
       </div>
       <Achievements/>
     </div>
