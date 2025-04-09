@@ -1,6 +1,6 @@
 import React from "react";
-import Achievements from "../Components/Achievements";
-
+import Achievements from "../components/Achievements";
+import Services from "../components/Services";
 function Home() {
   return (
     <div
@@ -41,6 +41,7 @@ function Home() {
         <img src="/design.png" alt="Company logo" className="hidden md:block w-1/2" />
       </div>
       <Achievements/>
+      <Services/>
     </div>
   );
 }
