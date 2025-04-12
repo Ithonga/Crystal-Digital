@@ -1,6 +1,6 @@
 import React from "react";
-import Achievements from "../components/Achievements";
-import Services from "../components/Services";
+import Achievements from "../Components/Achievements";
+import Services from "../Components/Services";
 function Home() {
   return (
     <div

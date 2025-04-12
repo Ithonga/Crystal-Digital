@@ -3,9 +3,9 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Service from "./pages/Service";
 import Contact from "./pages/Contact";
-import Header from "./components/Header";
-import TopHeader from "./components/TopHeader";
-import Footer from "./components/Footer";
+import Header from "./Components/Header";
+import TopHeader from "./Components/TopHeader";
+import Footer from "./Components/Footer";
 
 function App() {
   const validRoutes = ["/", "/about", "/services", "/contact"];
