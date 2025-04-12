@@ -37,7 +37,7 @@ function Services() {
             <div key={item.id} className="bg-red-500 rounded-3xl flex flex-col items-center justify-center w-[400px] h-[350px] ">
                 <img src={item.icon} alt={item.name} className="h-12 "/>
               <h1>{item.name}</h1>
-              <p>{item.description}</p>
+              <p>{item.description}g</p>
             </div>
           ))}
         </div>
