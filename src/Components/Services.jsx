@@ -1,30 +1,32 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Services() {
   const services = [
     {
       id: 1,
       icon: "favicon.png",
-      name: "services",
+      name: "Design",
       description: "this the services description",
     },
     {
       id: 2,
       icon: "favicon.png",
-      name: "services",
+      name: "Printing",
       description: "this the services description",
     },
     {
       id: 3,
       icon: "favicon.png",
-      name: "services",
+      name: "Branding",
       description: "this the services description",
     },
     {
       id: 4,
       icon: "favicon.png",
-      name: "services",
+      name: "Web Development",
       description: "this the services description",
+      link: "https://ronnieithonga.com",
     },
   ];
 
@@ -38,6 +40,7 @@ function Services() {
                 <img src={item.icon} alt={item.name} className="h-12 "/>
               <h1>{item.name}</h1>
               <p>{item.description}</p>
+              <Link to={item.link} className="text-blue-500">Learn more</Link>
             </div>
           ))}
         </div>
