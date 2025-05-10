@@ -149,45 +149,45 @@ function Contact() {
 
           {/* Map */}
           <div>
-            <h2 className="text-3xl font-bold mb-6">Find Us</h2>
-            <p className="text-gray-600 mb-8">
-              We're conveniently located in the Design District. Feel free to
-              stop by during business hours or schedule an appointment.
-            </p>
+  <h2 className="text-3xl font-bold mb-6">Find Us</h2>
+  <p className="text-gray-600 mb-8">
+    We're conveniently located in the Design District. Feel free to
+    stop by during business hours or schedule an appointment.
+  </p>
 
-            <div className="rounded-lg overflow-hidden h-96 bg-gray-300">
-              {/* Placeholder for an actual map integration */}
-              <div className="w-full h-full flex items-center justify-center bg-gray-200 relative">
-                <MapPin size={60} className="text-indigo-600" />
-                <div className="absolute inset-0 flex items-center justify-center bg-gray-800 bg-opacity-50 text-white">
-                  <div className="text-center p-4">
-                    <p className="font-bold text-lg">Map placeholder</p>
-                    <p className="text-sm">
-                      An actual map integration would be here
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
+  <div className="rounded-lg overflow-hidden h-96 bg-gray-300">
+    <div className="w-full h-full relative">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d225.6078056747136!2d36.66241710706986!3d-1.2453841662906102!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2ske!4v1746608126784!5m2!1sen!2ske"
+        width="100%"
+        height="100%"
+        style={{ border: 0 }}
+        allowFullScreen=""
+        loading="lazy"
+        referrerPolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+  </div>
 
-            <div className="mt-8">
-              <h3 className="text-xl font-bold mb-2">Business Hours</h3>
-              <ul className="space-y-2 text-gray-600">
-                <li className="flex justify-between">
-                  <span>Monday - Friday</span>
-                  <span>9:00 AM - 6:00 PM</span>
-                </li>
-                <li className="flex justify-between">
-                  <span>Saturday</span>
-                  <span>10:00 AM - 4:00 PM</span>
-                </li>
-                <li className="flex justify-between">
-                  <span>Sunday</span>
-                  <span>Closed</span>
-                </li>
-              </ul>
-            </div>
-          </div>
+  <div className="mt-8">
+    <h3 className="text-xl font-bold mb-2">Business Hours</h3>
+    <ul className="space-y-2 text-gray-600">
+      <li className="flex justify-between">
+        <span>Monday - Friday</span>
+        <span>9:00 AM - 6:00 PM</span>
+      </li>
+      <li className="flex justify-between">
+        <span>Saturday</span>
+        <span>10:00 AM - 4:00 PM</span>
+      </li>
+      <li className="flex justify-between">
+        <span>Sunday</span>
+        <span>Closed</span>
+      </li>
+    </ul>
+  </div>
+</div>
+
         </div>
       </div>
     </section>

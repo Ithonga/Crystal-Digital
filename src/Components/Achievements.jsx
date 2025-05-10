@@ -1,10 +1,9 @@
 import React from "react";
-import { motion } from "framer-motion";
 import CountUp from "../Animation/CountUp";
 
 function Achievements() {
   return (
-      <div className="flex flex-col md:flex-row w-[340px] h-fit items-center md:items-start justify-between md:w-fit md:gap-20 mb-4 bg-[#10171c] text-white p-4 rounded-b-[32px] ">
+      <div className="flex flex-col md:flex-row w-[340px] h-fit items-center md:items-start justify-center md:w-full md:gap-20 mb-4 bg-[#10171c] text-white p-4  ">
         <div className="text-center max-w-[200px]">
           <h2 className="text-[60px] font-bold text-yellow-400">
             {
