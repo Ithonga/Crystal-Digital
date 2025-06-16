@@ -14,10 +14,20 @@ function App() {
   const [loading, setLoading] = useState("true");
 
   useEffect(() => {
-    setTimeout(() => {
+    const handlePageLoad = () => {
       setLoading(false);
-    }, 2000);
-  }, [])
+    };
+
+    // Check if the page is already loaded
+    if (document.readyState === 'complete') {
+      setLoading(false);
+    } else {
+      window.addEventListener('load', handlePageLoad);
+    }
+
+    // Clean up
+    return () => window.removeEventListener('load', handlePageLoad);
+  }, []);
 
   if (loading) {
     return <div className="flex flex-col gap-3 font-bold text-2xl text-center items-center justify-center h-screen bg-[#00afef]">
