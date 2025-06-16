@@ -6,10 +6,13 @@ import Contact from "./pages/Contact";
 import Header from "./Components/Header";
 import TopHeader from "./Components/TopHeader";
 import Footer from "./Components/Footer";
+import { useEffect } from "react";
 
 function App() {
   const validRoutes = ["/", "/about", "/services", "/contact"];
   const isValidRoute = validRoutes.includes(location.pathname); // Check if current path is valid
+
+  
 
   return (
     <>
@@ -29,7 +32,7 @@ function App() {
 
 function NotFound() {
   return (
-    <h1 className="flex text-center items-center justify-center h-screen">
+    <h1 className="flex font-bold text-2xl text-center items-center justify-center h-screen">
       404 | Page Not Found
     </h1>
   );
