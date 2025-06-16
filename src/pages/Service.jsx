@@ -111,10 +111,11 @@ const Services = () => {
             ],
           })}
         </script>
-      </Helmet><div className="flex flex-col min-h-screen">
+      </Helmet>
+      <div className="flex flex-col bg-red-500 min-h-screen">
         {/* Hero Section */}
-        <section className="py-16 bg-gradient-to-r from-indigo-600 to-purple-600 text-white">
-          <div className="container mx-auto px-4 md:px-6 text-center">
+        <section className="py-16 mt-4 bg-gradient-to-r from-indigo-600 to-purple-600 text-white">
+          <div className="mx-auto px-4 md:px-6 text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">Our Services</h1>
             <p className="text-lg md:text-xl max-w-3xl mx-auto">
               From concept to completion, we offer comprehensive design, printing, and branding solutions to elevate your business.
@@ -189,7 +190,7 @@ const Services = () => {
               </div>
             </div>
           </div>
-        </section> */}
+        </section>
 
         {/* Call to Action */}
         <section className="py-16 bg-indigo-600 text-white">
@@ -203,7 +204,8 @@ const Services = () => {
             </div>
           </div>
         </section>
-      </div></>
+      </div>
+      </>
   );
 };
 
