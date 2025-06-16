@@ -49,67 +49,137 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "thenganya.com",
-        "url": "https://www.crystaldigital.co.ke",
-        "logo": "https://www.crystaldigital.co.ke/favicon0.png",
-        "description": "Crystal Digital offers top-notch graphic design, printing, branding, and web development services. Elevate your brand with our creative solutions. Contact us today!",
-        "sameAs": [
-          "https://www.facebook.com/crystaldigital",
-          "https://www.instagram.com/crystaldigital?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
-          "https://twitter.com/crystaldigital",
-        ],
-        "contactPoint": [
+        "@graph": [
           {
-            "@type": "ContactPoint",
-            "telephone": "+254722855767",
-            "contactType": "customer service",
-            "areaServed": "KE"
+            "@type": "Organization",
+            "name": "Crystal Digital",
+            "url": "https://www.crystaldigital.co.ke",
+            "logo": "https://www.crystaldigital.co.ke/favicon0.png",
+            "description": "Crystal Digital offers top-notch graphic design, printing, branding, and web development services. Elevate your brand with our creative solutions. Contact us today!",
+            "email": "cdigitalent@gmail.com",
+            "openingHours": "Monday-Saturday 08:00-20:00",
+            "sameAs": [
+              "https://www.facebook.com/crystaldigital",
+              "https://www.instagram.com/crystaldigital?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+              "https://twitter.com/crystaldigital"
+            ],
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "telephone": "+254722855767",
+              "contactType": "customer service",
+              "areaServed": "KE"
+            },
+            "areaServed": {
+              "@type": "Place",
+              "name": "Kenya"
+            },
+            "founder": {
+              "@type": "Person",
+              "name": "Cyrus Ndwaru"
+            },
+            "address": {
+              "@type": "PostalAddress",
+              "addressCountry": "KE"
+            },
+            "foundingDate": "2000-01-01",
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": "4.8",
+              "reviewCount": "120"
+            },
+            "review": [
+              {
+                "@type": "Review",
+                "author": {
+                  "@type": "Person",
+                  "name": "Ronnie Ithonga"
+                },
+                "datePublished": "2024-08-10",
+                "reviewBody": "Crystal Digital gave our brand a new life! Excellent design and top-quality printing.",
+                "reviewRating": {
+                  "@type": "Rating",
+                  "ratingValue": "5",
+                  "bestRating": "5"
+                }
+              },
+              {
+                "@type": "Review",
+                "author": {
+                  "@type": "Person",
+                  "name": "Tracy Ngendo"
+                },
+                "datePublished": "2024-07-15",
+                "reviewBody": "Very professional team. Our website turned out better than expected.",
+                "reviewRating": {
+                  "@type": "Rating",
+                  "ratingValue": "4.5",
+                  "bestRating": "5"
+                }
+              }
+            ]
+          },
+          {
+            "@type": "ItemList",
+            "itemListElement": [
+              {
+                "@type": "SiteNavigationElement",
+                "position": 1,
+                "name": "Home",
+                "url": "https://www.crystaldigital.co.ke"
+              },
+              {
+                "@type": "SiteNavigationElement",
+                "position": 2,
+                "name": "About",
+                "url": "https://www.crystaldigital.co.ke/about"
+              },
+              {
+                "@type": "SiteNavigationElement",
+                "position": 3,
+                "name": "Services",
+                "url": "https://www.crystaldigital.co.ke/services"
+              },
+              {
+                "@type": "SiteNavigationElement",
+                "position": 4,
+                "name": "Contact",
+                "url": "https://www.crystaldigital.co.ke/contact"
+              }
+            ]
+          },
+          {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://crystaldigital.co.ke"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "About",
+                "item": "https://crystaldigital.co.ke/about"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Services",
+                "item": "https://crystaldigital.co.ke/services"
+              },
+              {
+                "@type": "ListItem",
+                "position": 4,
+                "name": "Contact",
+                "item": "https://crystaldigital.co.ke/contact"
+              }
+            ]
           }
-        ],
-        "founder": [
-          {
-            "@type": "Person",
-            "name": "Cyrus Ndwaru"
-          }
-        ],
-        "address": {
-          "@type": "PostalAddress",
-          "addressCountry": "KE"
-        },
-        "foundingDate": "2000-01-01"
-      },
-      {
-        "@context": "https://schema.org",
-        "@type": "ItemList",
-        "itemListElement": [
-          {
-            "@type": "SiteNavigationElement",
-            "position": 1,
-            "name": "Home",
-            "url": "https://www.crystaldigital.co.ke"
-          },
-          {
-            "@type": "SiteNavigationElement",
-            "position": 2,
-            "name": "About",
-            "url": "https://www.crystaldigital.co.ke/about"
-          },
-          {
-            "@type": "SiteNavigationElement",
-            "position": 3,
-            "name": "Services",
-            "url": "https://www.crystaldigital.co.ke/services"
-          },
-          {
-            "@type": "SiteNavigationElement",
-            "position": 4,
-            "name": "Contact",
-            "url": "https://www.crystaldigital.co.ke/contact"
-          },
         ]
       }
-    </script>
+      </script>
+      
 
   </head>
   <body>
