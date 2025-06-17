@@ -84,6 +84,9 @@ function Home() {
           </div>
           <img src="/design.png" alt="Company logo" className="hidden md:block w-1/2" />
         </div>
+        <section className="bg-fixed bg-cover bg-center h-[150px] w-full text-white flex items-center justify-center" style={{ backgroundImage: "url('/bg.jpg')" }}>
+          
+        </section>
         <Achievements />
         <section className="py-16 bg-white">
           <div className="container mx-auto px-4 md:px-6">
@@ -137,6 +140,12 @@ function Home() {
                 />
               </div>
             </div>
+          </div>
+        </section>
+        <section className="bg-fixed bg-cover bg-center h-screen w-full text-white flex items-center justify-center" style={{ backgroundImage: "url('/design.png')" }}>
+          <div>
+            <h1 className="text-4xl font-bold">Welcome to Crystal Digital</h1>
+            <p className="mt-4">Your brand, beautifully designed.</p>
           </div>
         </section>
         <Services />

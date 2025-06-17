@@ -104,11 +104,9 @@ function Contact() {
                 <h3 className="text-xl font-bold mb-2">Location</h3>
                 <p className="text-gray-600 mb-2">Visit our office</p>
                 <address className="text-indigo-600 not-italic">
-                  123 Business Avenue,
+                  Muguku Business Centre,
                   <br />
-                  Design District, City,
-                  <br />
-                  Country
+                  Kikuyu,
                 </address>
               </div>
             </div>
@@ -218,13 +216,10 @@ function Contact() {
                 <h3 className="text-xl font-bold mb-2">Business Hours</h3>
                 <ul className="space-y-2 text-gray-600">
                   <li className="flex justify-between">
-                    <span>Monday - Friday</span>
-                    <span>9:00 AM - 6:00 PM</span>
+                    <span>Monday - Saturday</span>
+                    <span>8:00 AM - 20:00 PM</span>
                   </li>
-                  <li className="flex justify-between">
-                    <span>Saturday</span>
-                    <span>10:00 AM - 4:00 PM</span>
-                  </li>
+                  
                   <li className="flex justify-between">
                     <span>Sunday</span>
                     <span>Closed</span>

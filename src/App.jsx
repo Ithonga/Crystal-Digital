@@ -7,6 +7,7 @@ import Header from "./Components/Header";
 import TopHeader from "./Components/TopHeader";
 import Footer from "./Components/Footer";
 import { useEffect, useState } from "react";
+import Whatsapp from "./Components/Whatsapp";
 
 function App() {
   const validRoutes = ["/", "/about", "/services", "/contact"];
@@ -44,6 +45,7 @@ function App() {
     <>
       {isValidRoute && <TopHeader />}
       {isValidRoute && <Header />}
+      <Whatsapp/>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />

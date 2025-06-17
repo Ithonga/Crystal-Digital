@@ -55,7 +55,7 @@ const Footer = () => {
             <ul className="space-y-2">
               <li className="flex items-start">
                 <span className="mr-2">📍</span>
-                <span>Kikuyu, Muguku Building</span>
+                <span>Muguku Business Centre, Kikuyu</span>
               </li>
               <li className="flex items-start">
                 <span className="mr-2">📱</span>
@@ -71,6 +71,7 @@ const Footer = () => {
 
         <div className="border-t border-gray-700 mt-8 pt-8 text-sm text-gray-400 text-center">
           <p>© 2025 Crystal Digital Entertainment.</p>
+          <p>Designed and Developed by{" "}<Link to="https://www.ronnieithonga.com" target="_blank" className="text-blue-600 underline hover:text-white">Ronnie Ithonga</Link>.</p>
         </div>
       </div>
     </footer>
