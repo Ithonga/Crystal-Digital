@@ -142,12 +142,12 @@ function Home() {
             </div>
           </div>
         </section>
-        <section className="bg-fixed bg-cover bg-center h-screen w-full text-white flex items-center justify-center" style={{ backgroundImage: "url('/design.png')" }}>
+        {/* <section className="bg-fixed bg-cover bg-center h-screen w-full text-white flex items-center justify-center" style={{ backgroundImage: "url('/design.png')" }}>
           <div>
             <h1 className="text-4xl font-bold">Welcome to Crystal Digital</h1>
             <p className="mt-4">Your brand, beautifully designed.</p>
           </div>
-        </section>
+        </section> */}
         <Services />
       </div></>
   );
