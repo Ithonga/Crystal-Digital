@@ -1,4 +1,7 @@
+import { LocateFixedIcon, Phone } from "lucide-react";
 import React from "react";
+import { CiLocationOn } from "react-icons/ci";
+import { MdEmail } from "react-icons/md";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -54,15 +57,15 @@ const Footer = () => {
             <h3 className="text-lg font-bold mb-4">Contact Info</h3>
             <ul className="space-y-2">
               <li className="flex items-start">
-                <span className="mr-2">📍</span>
+                <span className="mr-2"><CiLocationOn/></span>
                 <span>Muguku Business Centre, Kikuyu</span>
               </li>
               <li className="flex items-start">
-                <span className="mr-2">📱</span>
+                <span className="mr-2"><Phone/></span>
                 <span>+254 722 855 767</span>
               </li>
               <li className="flex items-start">
-                <span className="mr-2">✉️</span>
+                <span className="mr-2"><MdEmail/></span>
                 <span>cdigitalent@gmail.com</span>
               </li>
             </ul>

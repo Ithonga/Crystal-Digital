@@ -90,8 +90,8 @@ function About() {
               <div className="hover:shadow-lg transition-shadow bg-slate-100 border rounded-lg p-6">
                 <div className="pt-6">
                   <div className="flex flex-col items-center text-center">
-                    <div className="p-3 bg-indigo-100 rounded-full mb-4">
-                      <Award size={24} className="text-indigo-600" />
+                    <div className="p-3 bg-[#00afef] rounded-full mb-4">
+                      <Award size={24} className="text-white" />
                     </div>
                     <h3 className="text-xl font-bold mb-2">Excellence</h3>
                     <p className="text-gray-600">
@@ -104,8 +104,8 @@ function About() {
               <div className="hover:shadow-lg transition-shadow bg-slate-100 border rounded-lg p-6">
                 <div className="pt-6">
                   <div className="flex flex-col items-center text-center">
-                    <div className="p-3 bg-indigo-100 rounded-full mb-4">
-                      <Users size={24} className="text-indigo-600" />
+                    <div className="p-3 bg-[#00afef] rounded-full mb-4">
+                      <Users size={24} className="text-white" />
                     </div>
                     <h3 className="text-xl font-bold mb-2">Collaboration</h3>
                     <p className="text-gray-600">
@@ -118,8 +118,8 @@ function About() {
               <div className="hover:shadow-lg transition-shadow bg-slate-100 border rounded-lg p-6">
                 <div className="pt-6">
                   <div className="flex flex-col items-center text-center">
-                    <div className="p-3 bg-indigo-100 rounded-full mb-4">
-                      <TrendingUp size={24} className="text-indigo-600" />
+                    <div className="p-3 bg-[#00afef] rounded-full mb-4">
+                      <TrendingUp size={24} className="text-white" />
                     </div>
                     <h3 className="text-xl font-bold mb-2">Innovation</h3>
                     <p className="text-gray-600">
@@ -132,8 +132,8 @@ function About() {
               <div className="hover:shadow-lg transition-shadow bg-slate-100 border rounded-lg p-6">
                 <div className="pt-6">
                   <div className="flex flex-col items-center text-center">
-                    <div className="p-3 bg-indigo-100 rounded-full mb-4">
-                      <Calendar size={24} className="text-indigo-600" />
+                    <div className="p-3 bg-[#00afef] rounded-full mb-4">
+                      <Calendar size={24} className="text-white" />
                     </div>
                     <h3 className="text-xl font-bold mb-2">Reliability</h3>
                     <p className="text-gray-600">

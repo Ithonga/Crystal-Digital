@@ -1,6 +1,7 @@
-import React, { useEffect, useState } from "react";
-import { Mail, Phone, MapPin, Send, CheckCircle } from "lucide-react";
+import React, { useEffect } from "react";
+import { Mail, Phone, MapPin, } from "lucide-react";
 import { Helmet } from "react-helmet";
+import Swal from "sweetalert2";
 
 function Contact() {
 
@@ -8,17 +9,34 @@ function Contact() {
     window.scrollTo(0, 0);
   }, []);
 
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [phone, setPhone] = useState("");
-  const [message, setMessage] = useState("");
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setName("");
-    setEmail("");
-    setSubject("");
-    setMessage("");
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+
+    formData.append("access_key", "682f7837-ccc2-4f85-bf02-e5bc91c1bd24");
+
+    const object = Object.fromEntries(formData);
+    const json = JSON.stringify(object);
+
+    const res = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: json,
+    }).then((res) => res.json());
+
+    if (res.success) {
+      Swal.fire({
+        title: "SUCCESS!",
+        text: "Your message has been sent successfully!",
+        icon: "success",
+      });
+    }
+    //resets the form
+    event.target.reset();
   };
 
   return (
@@ -66,14 +84,14 @@ function Contact() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
             <div className="hover:shadow-lg transition-shadow border shadow-md">
               <div className="p-6 flex flex-col items-center text-center">
-                <div className="p-3 bg-indigo-100 rounded-full mb-4">
-                  <Phone size={24} className="text-indigo-600" />
+                <div className="p-3 bg-[#00afef] rounded-full mb-4">
+                  <Phone size={24} className="text-white" />
                 </div>
                 <h3 className="text-xl font-bold mb-2">Phone</h3>
                 <p className="text-gray-600 mb-2">Call us directly</p>
                 <a
                   href="tel:+254722 855 767"
-                  className="text-indigo-600 hover:text-indigo-800 font-medium"
+                  className="text-[#00afef] hover:text-blue-800 font-medium"
                 >
                   +254 722 855 767
                 </a>
@@ -82,14 +100,14 @@ function Contact() {
 
             <div className="hover:shadow-lg transition-shadow border shadow-md">
               <div className="p-6 flex flex-col items-center text-center">
-                <div className="p-3 bg-indigo-100 rounded-full mb-4">
-                  <Mail size={24} className="text-indigo-600" />
+                <div className="p-3 bg-[#00afef] rounded-full mb-4">
+                  <Mail size={24} className="text-white" />
                 </div>
                 <h3 className="text-xl font-bold mb-2">Email</h3>
                 <p className="text-gray-600 mb-2">Send us a message</p>
                 <a
                   href="mailto:cdigitalent@gmail.com"
-                  className="text-indigo-600 hover:text-indigo-800 font-medium"
+                  className="text-[#00afef] hover:text-blue-800 font-medium"
                 >
                   cdigitalent@gmail.com
                 </a>
@@ -98,12 +116,12 @@ function Contact() {
 
             <div className="hover:shadow-lg transition-shadow border shadow-md">
               <div className="p-6 flex flex-col items-center text-center">
-                <div className="p-3 bg-indigo-100 rounded-full mb-4">
-                  <MapPin size={24} className="text-indigo-600" />
+                <div className="p-3 bg-[#00afef] rounded-full mb-4">
+                  <MapPin size={24} className="text-white" />
                 </div>
                 <h3 className="text-xl font-bold mb-2">Location</h3>
                 <p className="text-gray-600 mb-2">Visit our office</p>
-                <address className="text-indigo-600 not-italic">
+                <address className="text-[#00afef] not-italic">
                   Muguku Business Centre,
                   <br />
                   Kikuyu,
@@ -120,7 +138,7 @@ function Contact() {
                 Fill out the form below and we'll get back to you as soon as
                 possible. We're excited to hear about your project!
               </p>
-              <form onSubmit={""} className="space-y-6">
+              <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div className="space-y-2">
                     <label>Your Name</label>
@@ -129,8 +147,6 @@ function Contact() {
                       type="text"
                       placeholder="name"
                       required
-                      value={name}
-                      onChange={(e) => setName(e.target.value)}
                       className="border border-gray-300 rounded-md p-2 w-full"
                     />
                   </div>
@@ -143,8 +159,6 @@ function Contact() {
                       type="email"
                       placeholder="example@gmail.com"
                       required
-                      value={email}
-                      onChange={(e) => setEmail(e.target.value)}
                       className="border border-gray-300 rounded-md p-2 w-full"
                     />
                   </div>
@@ -158,8 +172,6 @@ function Contact() {
                       type="phone"
                       placeholder="0712 345 678"
                       required
-                      value={phone}
-                      onChange={(e) => setPhone(e.target.value)}
                       className="border border-gray-300 rounded-md p-2 w-full"
                     />
                   </div>
@@ -174,18 +186,15 @@ function Contact() {
                       placeholder="write your message"
                       required
                       rows={6}
-                      value={message}
-                      onChange={(e) => setMessage(e.target.value)}
                       className="border border-gray-300 rounded-md p-2 w-full"
                     />
                   </div>
                 </div>
                 <button
                   type="submit"
-                  onSubmit={handleSubmit}
-                  className="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded"
+                  className="bg-[#00afef] hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
                 >
-                  Submit
+                  Send Message
                 </button>
               </form>
             </div>
@@ -219,7 +228,7 @@ function Contact() {
                     <span>Monday - Saturday</span>
                     <span>8:00 AM - 20:00 PM</span>
                   </li>
-                  
+
                   <li className="flex justify-between">
                     <span>Sunday</span>
                     <span>Closed</span>
