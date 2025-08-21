@@ -40,25 +40,25 @@ function Services() {
 
   return (
     <>
-      <div className="flex flex-col items-center justify-center text-center gap-4">
+      <div className="flex flex-col items-center justify-center text-center gap-4 ">
         <h1 className="text-4xl font-bold">Our Services</h1>
         <p className="px-4 md:text-lg">
           We provide comprehensive design, printing, and <br/>branding solutions
           tailored to meet your business needs.
         </p>
       </div>
-      <div className="flex md:flex-row flex-col items-center justify-center gap-8 px-9 md:px-20 py-[80px] md:h-screen w-full">
+      <div className="flex md:flex-row flex-col items-center justify-center gap-8 px-4 md:px-20 py-[80px] md:h-screen w-full">
         {/* <div className="flex gap-8 p-9 bg-green-300 h-full"> */}
         <img
           src="/bg2.jpg"
           alt="background"
-          className="rounded-3xl object-cover w-[400px] h-full "
+          className="rounded-3xl object-cover w-[400px] h-full px-"
         />
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 h-full w-full ">
           {services.map((item) => (
             <div
               key={item.id}
-              className="p-5 space-y-5 shadow-md hover:shadow-xl rounded-3xl flex flex-col items-center justify-center "
+              className="bg-slate-200 p-5 space-y-5 shadow-md hover:shadow-xl rounded-3xl flex flex-col items-center justify-center "
             >
               {/* <img src={item.icon} alt={item.name} className="h-12 " /> */}
               <div className="flex items-center justify-center bg-cyan w-14 p-2 rounded-full "><item.icon className="text-white h-12"/></div>

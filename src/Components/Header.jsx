@@ -16,9 +16,9 @@ function Header() {
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
-    <div className="sticky top-0 flex h-[90px] bg-white shadow-lg justify-between z-10 mb3 w-full p-3 items-center bg-transparent">
+    <div className="sticky top-0 flex h-[90px] bg-white/60 backdrop-blur-md shadow-lg justify-between z-10 mb3 w-full p-3 items-center ">
       <a href="/">
-      <img src="/full-logo.png" alt="Company logo" className="h-12" />
+        <img src="/full-logo.png" alt="Company logo" className="h-12" />
       </a>
       <div className="md:hidden">
         <button onClick={toggleMenu}>

@@ -136,7 +136,7 @@ const Services = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
               {services.map((service, index) => (
                 <div key={index}>
-                  <div className="flex flex-col items-center mb-4 border rounded-lg p-8 gap-4 hover:shadow-lg bg-slate-100">
+                  <div className="flex flex-col items-center mb-4 border rounded-lg p-8 gap-4 hover:shadow-lg bg-slate-200">
                     <div className="w-12 h-12 bg-[#00afef] text-white rounded-full flex items-center justify-center mr-4">
                       <service.icon className="w-6 h-6" />
                     </div>
