@@ -67,7 +67,8 @@ function About() {
 
               <div className="lg:w-1/2">
                 <img
-                  src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                  // src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                  src="/bgabout.jpg"
                   alt="Our company story"
                   className="rounded-lg shadow-lg w-full h-auto"
                 />
@@ -146,7 +147,7 @@ function About() {
           </div>
         </section>
 
-        <section className="bg-fixed bg-cover bg-center h-[300px] text-white flex items-center justify-center" style={{ backgroundImage: "url('/bg.jpg')" }}>
+        <section className="bg-fixed bg-cover bg-center h-[300px] text-white flex items-center justify-center" style={{ backgroundImage: "url('/bg2.jpg')" }}>
           
         </section>
 

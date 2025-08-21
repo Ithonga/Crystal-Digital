@@ -50,7 +50,7 @@ function Services() {
       <div className="flex md:flex-row flex-col items-center justify-center gap-8 px-9 md:px-20 py-[80px] md:h-screen w-full">
         {/* <div className="flex gap-8 p-9 bg-green-300 h-full"> */}
         <img
-          src="/bg.jpg"
+          src="/bg2.jpg"
           alt="background"
           className="rounded-3xl object-cover w-[400px] h-full "
         />

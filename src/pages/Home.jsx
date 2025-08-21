@@ -84,7 +84,7 @@ function Home() {
           </div>
           <img src="/design.png" alt="Company logo" className="hidden md:block w-1/2" />
         </div>
-        <section className="bg-fixed bg-cover bg-center h-[150px] w-full text-white flex items-center justify-center" style={{ backgroundImage: "url('/bg.jpg')" }}>
+        <section className="bg-fixed bg-cover bg-center h-[150px] w-full text-white flex items-center justify-center" style={{ backgroundImage: "url('/bg2.jpg')" }}>
           
         </section>
         <Achievements />
